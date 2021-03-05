@@ -1,6 +1,10 @@
-import { RequestHandler } from "express"
+import { Request, Response, NextFunction } from "express"
 
-const TASKS = []
-export const createTask: RequestHandler = (req, res, next) => {
-    
+
+export const getTask = (req: Request , res: Response, next: NextFunction) => {
+    return res.send("the todo")
+}
+
+export const createTask  = (req: Request , res: Response, next: NextFunction) => {
+    return res.send("new the todo")
 }
